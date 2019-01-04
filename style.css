@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    background: transparent;
+    font-family: inherit;
+    list-style-type: none;
+    font-weight: lighter;
+    font-size: inherit;
+    outline: none;
+}
+
+body {
+    color: #ccc;
+    background-color: #0f0f23;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 14pt;
+    padding: 10pt;
+}
+
+button, a {
+    display: inline-block;
+    border: none;
+    color: #009900;
+    cursor: pointer;
+    text-decoration: none;
+}
+button::before, a::before {
+    content: "[";
+}
+button::after, a::after {
+    content: "]";
+}
+button:hover, a:hover {
+    text-shadow: 0 0 7pt #009900, 0 0 5pt #009900, 0 0 1pt #009900;
+}
+
+textarea {
+    font-family: 'Courier New', Courier, monospace;
+    border: 1px solid #666666;
+    background: #10101a;
+}
